@@ -1,7 +1,7 @@
 {
   "name": "kantor-react",
   "version": "0.1.0",
-  "homepage": "https://github.com/adim2222/kantor-react",
+  "homepage": "https://adim2222.github.io/kantor-react/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
