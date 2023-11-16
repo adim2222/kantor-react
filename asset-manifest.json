@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kantor-react/static/css/main.338bd40f.css",
-    "main.js": "/kantor-react/static/js/main.ea53eac9.js",
+    "main.css": "/kantor-react/static/css/main.9f2f2149.css",
+    "main.js": "/kantor-react/static/js/main.4ad5057b.js",
     "static/js/787.509e3ee3.chunk.js": "/kantor-react/static/js/787.509e3ee3.chunk.js",
     "index.html": "/kantor-react/index.html",
-    "main.338bd40f.css.map": "/kantor-react/static/css/main.338bd40f.css.map",
-    "main.ea53eac9.js.map": "/kantor-react/static/js/main.ea53eac9.js.map",
+    "main.9f2f2149.css.map": "/kantor-react/static/css/main.9f2f2149.css.map",
+    "main.4ad5057b.js.map": "/kantor-react/static/js/main.4ad5057b.js.map",
     "787.509e3ee3.chunk.js.map": "/kantor-react/static/js/787.509e3ee3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.338bd40f.css",
-    "static/js/main.ea53eac9.js"
+    "static/css/main.9f2f2149.css",
+    "static/js/main.4ad5057b.js"
   ]
 }
