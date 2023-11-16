@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const Calculator = () => {
-
     const [value, setValue] = useState(0);
     const [multiplier, setMultiplier] = useState(0);
 
@@ -9,7 +8,7 @@ const Calculator = () => {
 
     const buttonClick = (event) => {
         event.preventDefault();
-        setResult(value * multiplier);
+        setResult((value * multiplier).toFixed(2));
     };
 
     return (
@@ -17,17 +16,21 @@ const Calculator = () => {
             <fieldset className="form__fieldset">
                 <legend>Kalkulator walut</legend>
                 <label className="label__amount">
-                    Ilość do kupienia: <input type="number" onChange={(event) => setValue(event.target.value)} name="amount" className="amount"/>
+                    Ilość do kupienia: <input type="number" onChange={(event) => setValue(event.target.value)} name="amount" className="amount" />
                 </label>
-                <hr/>
+                <hr />
                 <label className="label__value">
-                    Aktualny kurs: <input type="number" onChange={(event) => setMultiplier(event.target.value)} name="value" className="value"/>
+                    Waluta: <select onChange={(event) => setMultiplier(event.target.value)} name="value" className="value">
+                        <option value={4.38}>Euro</option>
+                        <option value={4.03}>USD</option>
+                        <option value={5.01}>GBP</option>
+                    </select>
                 </label>
-                <hr/>
+                <hr />
                 <div className="button__section">
-                <button onClick={buttonClick} className="button">Przelicz</button>
+                    <button onClick={buttonClick} className="button">Przelicz</button>
                 </div>
-                <hr/>
+                <hr />
                 <span>
                     <p className="display">{result}PLN</p>
                 </span>
