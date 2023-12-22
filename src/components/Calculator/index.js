@@ -27,7 +27,7 @@ const Calculator = () => {
                     </select>
                 </label>
                 <hr />
-                <div className="button__section">
+                <div className="button-section">
                     <button onClick={buttonClick} className="button">Przelicz</button>
                 </div>
                 <hr />
