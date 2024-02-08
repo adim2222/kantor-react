@@ -1,10 +1,11 @@
 import './App.css';
 import Calculator from './components/Calculator/index.js'
-import { useState } from 'react';
+import Clock from './components/Clock/index.js';
 
 function App() {
   return (
     <div className='calculator-container'>
+      <Clock/>
       <Calculator/>
     </div>
   );

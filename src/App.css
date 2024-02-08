@@ -62,3 +62,8 @@ body {
 .button-section {
   text-align: center;
 }
+
+.clock {
+  text-align: end;
+  margin: 10px;
+}
