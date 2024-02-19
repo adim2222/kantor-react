@@ -1,13 +1,13 @@
-import './App.css';
 import Calculator from './components/Calculator/index.js'
 import Clock from './components/Clock/index.js';
+import { CalculatorContainer } from './styled.js';
 
 function App() {
   return (
-    <div className='calculator-container'>
-      <Clock/>
-      <Calculator/>
-    </div>
+    <CalculatorContainer>
+      <Clock />
+      <Calculator />
+    </CalculatorContainer>
   );
 }
 
