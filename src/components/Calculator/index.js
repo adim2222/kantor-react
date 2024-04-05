@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Form, Fieldset, Display, Button, ButtonSection } from "./styled";
 
-const Calculator = () => {
+const Calculator = (rateData) => {
     const [value, setValue] = useState(0);
-    const [multiplier, setMultiplier] = useState(4.38);
+    const [multiplier, setMultiplier] = useState(rateData.EUR);
 
     const [result, setResult] = useState(0);
 
@@ -22,9 +22,9 @@ const Calculator = () => {
                 <hr />
                 <label>
                     Waluta: <select onChange={(event) => setMultiplier(event.target.value)} name="value">
-                        <option value={4.38}>Euro</option>
-                        <option value={4.03}>USD</option>
-                        <option value={5.01}>GBP</option>
+                        <option value={rateData.EUR}>Euro</option>
+                        <option value={rateData.USD}>USD</option>
+                        <option value={rateData.GBP}>GBP</option>
                     </select>
                 </label>
                 <hr />
