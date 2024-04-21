@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import { Form, Fieldset, Display, Button, ButtonSection } from "./styled";
 
 const Calculator = (rateData) => {
+    const rates = rateData.rateData;
+    console.log(rates);
     const [value, setValue] = useState(0);
-    const [multiplier, setMultiplier] = useState(rateData.EUR);
+    const [multiplier, setMultiplier] = useState(rates.EUR.value);
 
     const [result, setResult] = useState(0);
 
     const buttonClick = (event) => {
         event.preventDefault();
-        setResult((value * multiplier).toFixed(2));
+        setResult((value / multiplier).toFixed(2));
     };
 
     return (
@@ -22,9 +24,9 @@ const Calculator = (rateData) => {
                 <hr />
                 <label>
                     Waluta: <select onChange={(event) => setMultiplier(event.target.value)} name="value">
-                        <option value={rateData.EUR}>Euro</option>
-                        <option value={rateData.USD}>USD</option>
-                        <option value={rateData.GBP}>GBP</option>
+                        <option value={rates.EUR.value}>Euro</option>
+                        <option value={rates.USD.value}>USD</option>
+                        <option value={rates.GBP.value}>GBP</option>
                     </select>
                 </label>
                 <hr />

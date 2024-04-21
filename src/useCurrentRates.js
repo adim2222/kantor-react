@@ -3,14 +3,17 @@ import { useEffect, useState } from "react";
 
 export const useCurrentRates = () => {
     const [ratesData, setRatesData] = useState({state: "loading"});
-    useEffect(async () => {
-        try {
-            const res = await axios.get("https://api.currencyapi.com/v3/latest?apikey=cur_live_222y2QVMHCzaRW2VVVkTzIOWFU5vyJsMv5q8Wmy1&base_currency=PLN");
-            setRatesData(res);
-        }
-        catch {
-            setRatesData({state: "error"});
-        }
+    useEffect(() => {
+        const getRatesData = async () => {
+            try {
+                const res = await axios.get("https://api.currencyapi.com/v3/latest?apikey=cur_live_F5cZh8xZQbbbuJXMb96MMbM2pjSN3TLER0SnHHDQ&base_currency=PLN");
+                setRatesData(res.data.data);
+            }
+            catch {
+                setRatesData({state: "error"});
+            }
+        };
+        getRatesData();
     }, []);
     return ratesData;
 };
