@@ -1,10 +1,8 @@
-# Stronka którą musiałem napisać dle youcode ¯\\\_(ツ)_/¯
+# Another currency convert website
 
-it just multiplies numbers excet this time in react ✔
+exchange rate data taken from https://api.currencyapi.com/
 
 Demo: https://adim2222.github.io/kantor-react/
-
-![alt text](https://cdn.discordapp.com/attachments/1175158922357768314/1187776693067329566/image.png?ex=65981e3f&is=6585a93f&hm=af0c4e5ed1f1ae027efc11f6e60b1398a4feb1910f754f1a2b07e39eeccadcbf&)
 
 # Getting Started with Create React App
 
